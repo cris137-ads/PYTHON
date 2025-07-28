@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calculo_pre&#231;o_final"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-28 09:58:46 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI1OyIxMDowNjo1MyAiOzIwMjY="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI4OyIwOTo1ODo0NiAiOzI7MjE1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Calculando pre&#231;o"/>
+            <declare name="valorin" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor do inicial do produto&quot;" newline="True"/>
+            <input variable="valorin"/>
+            <declare name="tpcliente" type="String" array="False" size=""/>
+            <output expression="&quot;Informe o tipo de cliente&quot;" newline="True"/>
+            <input variable="tpcliente"/>
+            <declare name="perdesconto1" type="Real" array="False" size=""/>
+            <assign variable="perdesconto1" expression="valorin*0.10"/>
+            <declare name="valordesconto1" type="Real" array="False" size=""/>
+            <assign variable="valordesconto1" expression="valorin - perdesconto1"/>
+            <declare name="perdesconto2" type="Real" array="False" size=""/>
+            <assign variable="perdesconto2" expression="valorin*0.05"/>
+            <declare name="valordesconto2" type="Real" array="False" size=""/>
+            <assign variable="valordesconto2" expression="valorin - perdesconto2"/>
+            <if expression="tpcliente == &quot;VIP&quot; &amp;&amp; valorin &gt; 100">
+                <then>
+                    <output expression="&quot; Valor final do produto : R$&quot; &amp; valordesconto1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="tpcliente == &quot;COMUN&quot; &amp;&amp; valorin &gt; 100">
+                        <then>
+                            <output expression="&quot; Valor final do produto : R$&quot; &amp; valordesconto2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Cliente n&#227;o tem desconto R$:&quot; &amp; valorin" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

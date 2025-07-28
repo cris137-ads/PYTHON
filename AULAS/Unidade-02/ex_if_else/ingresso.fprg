@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ingresso"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-22 05:20:15 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTIyOyIxMTowNDo0MSAiOzIwMTk="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTIyOyIwNToyMDoxNSAiOzI7MjEzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe a idade do cliente&quot;" newline="True"/>
+            <input variable="idade"/>
+            <declare name="integral" type="Real" array="False" size=""/>
+            <assign variable="integral" expression="25.00"/>
+            <if expression="idade &lt; 12 &amp;&amp; idade &lt;60">
+                <then/>
+                <else>
+                    <assign variable="" expression=""/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

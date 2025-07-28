@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="conversor de moedas"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-25 09:09:10 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTIzOyIxMDowNDoyMyAiOzIwMTk="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI1OyIwOTowOToxMCAiOzM7MjE0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Conversor de moedas "/>
+            <declare name="TaxaDolar" type="Real" array="False" size=""/>
+            <assign variable="TaxaDolar" expression="5.56"/>
+            <declare name="TaxaEuro" type="Real" array="False" size=""/>
+            <assign variable="TaxaEuro" expression="6.53"/>
+            <declare name="ValoRC" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor a ser convertido&quot;" newline="True"/>
+            <input variable="ValoRC"/>
+            <declare name="OrigemMoeda" type="String" array="False" size=""/>
+            <output expression="&quot;Digite a moeda de origem (ex : BRL,USD,EUR):&quot;" newline="True"/>
+            <input variable="OrigemMoeda"/>
+            <declare name="MoedaDestino" type="String" array="False" size=""/>
+            <output expression="&quot;Digite a moeda de destino (ex: BRL,USD,EUR):&quot;" newline="True"/>
+            <input variable="MoedaDestino"/>
+            <declare name="ResultadoDolar" type="Real" array="False" size=""/>
+            <assign variable="ResultadoDolar" expression="ValoRC /TaxaDolar"/>
+            <declare name="ResultadoEuro" type="Real" array="False" size=""/>
+            <assign variable="ResultadoEuro" expression="ValoRC /TaxaEuro"/>
+            <declare name="arrendondarDolar" type="Real" array="False" size=""/>
+            <assign variable="arrendondarDolar" expression="int(ResultadoDolar*100+5)/100"/>
+            <declare name="arrenEuro" type="Real" array="False" size=""/>
+            <assign variable="arrenEuro" expression="int(ResultadoEuro*100+5)/100"/>
+            <if expression="OrigemMoeda == &quot;BRL&quot; &amp;&amp; Moedadestino == &quot;USD&quot;">
+                <then>
+                    <output expression="&quot;Valor convertido em D&#242;lar: US$ &quot; &amp; arrendondarDolar" newline="True"/>
+                </then>
+                <else>
+                    <if expression="OrigemMoeda == &quot;BRL&quot; &amp;&amp; Moedadestino == &quot;EUR&quot;">
+                        <then>
+                            <output expression="&quot;Valor convertido em Euro: &#8364; &quot; &amp; arrenEuro" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Moeda &#237;nvalida&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
