@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="valor_procurado"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-05 01:18:39 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA4LTA0OyIxMDo0Nzo1MyAiOzIwMjk="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA4LTA1OyIwMToxODozOSAiOzI7MjE0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeros" type="Integer" array="True" size="10"/>
+            <assign variable="numeros[0]" expression="1"/>
+            <assign variable="numeros[1]" expression="2"/>
+            <assign variable="numeros[2]" expression="3"/>
+            <assign variable="numeros[3]" expression="4"/>
+            <assign variable="numeros[4]" expression="5"/>
+            <assign variable="numeros[5]" expression="6"/>
+            <assign variable="numeros[6]" expression="7"/>
+            <assign variable="numeros[7]" expression="8"/>
+            <assign variable="numeros[8]" expression="9"/>
+            <assign variable="numeros[9]" expression="10"/>
+            <declare name="ValorProcurado, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor que deseja encontrar&quot;" newline="True"/>
+            <input variable="ValorProcurado"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="ValorProcurado = numeros[i]">
+                    <then>
+                        <output expression="&quot;Encontrou numero&quot;" newline="True"/>
+                        <output expression="&quot;fim de loop&quot;" newline="True"/>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;valor n&#227;o encontrado&quot; &amp;numeros[i]" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Fim de loop&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

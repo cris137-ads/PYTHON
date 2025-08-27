@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fatorial"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-30 11:30:42 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMwOyIxMDoyMTowNyAiOzIwMTg="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMwOyIxMTozMDo0MiAiOzE7MjEyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Algoritimo que calcula o fatorial de um numero "/>
+            <declare name="numero, i, resultado" type="Integer" array="False" size=""/>
+            <assign variable="resultado" expression="1"/>
+            <output expression="&quot;Digite o numero (inteiro)para calcular o seu fatorial :&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="resultado" expression="resultado*i"/>
+            </for>
+            <output expression="numero &amp; &quot;! =&quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

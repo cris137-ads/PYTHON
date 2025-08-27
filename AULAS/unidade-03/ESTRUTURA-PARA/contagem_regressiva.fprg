@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="contagem_regressiva"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-31 12:25:01 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMxOyIxMTowODowMiAiOzIwMjA="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMxOyIxMjoyNTowMSAiOzE7MjEyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="algotimo de contagem regressiva "/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <output expression="&quot;Digite um numero :&quot;" newline="True"/>
+            <input variable="num"/>
+            <while expression="num &gt; 0">
+                <output expression="num" newline="True"/>
+                <assign variable="num" expression="num-1"/>
+            </while>
+            <output expression="&quot;Fim da contagem&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

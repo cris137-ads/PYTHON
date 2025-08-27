@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="par_ou_impar"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-28 01:42:11 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI4OyIxMTo0ODowNyAiOzIwMzU="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI4OyIwMTo0MjoxMSAiOzE7MjEzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="par ou impar"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <output expression="&quot; digite um numero &quot;" newline="True"/>
+            <input variable="num"/>
+            <if expression="num % 2 ==0">
+                <then>
+                    <output expression="&quot;par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

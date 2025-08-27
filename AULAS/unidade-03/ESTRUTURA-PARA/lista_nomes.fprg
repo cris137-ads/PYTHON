@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lista_nomes"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-30 09:56:29 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMwOyIwODowNzo1NCAiOzIwMzE="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMwOyIwOTo1NjoyOSAiOzE7MjE0Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nomes" type="String" array="True" size="4"/>
+            <assign variable="nomes[0]" expression="&quot;jo&#227;o&quot;"/>
+            <assign variable="nomes[1]" expression="&quot;maria&quot;"/>
+            <assign variable="nomes[2]" expression="&quot;pedro&quot;"/>
+            <assign variable="nomes[3]" expression="&quot;ana&quot;"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="nomes[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

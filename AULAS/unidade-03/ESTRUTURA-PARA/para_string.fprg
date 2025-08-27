@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="para_string"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-29 01:03:45 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI5OyIxMjozNzoxMyAiOzIwMzI="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI5OyIwMTowMzo0NSAiOzE7MjEzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="frase" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <input variable="frase"/>
+            <for variable="i" start="0" end="len(frase)-1" direction="inc" step="1">
+                <output expression="char(frase,i)" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="estrutura_para_simples"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-29 09:53:37 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI5OyIwNzo0NzoxMCAiOzIwMzQ="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTI5OyIwOTo1MzozNyAiOzE7MjE1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, i" type="Integer" array="False" size=""/>
+            <comment text="LER UMA LISTA DE NUMEROS USANDO ESTRUTURA PARA "/>
+            <assign variable="numero" expression="5"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <output expression="i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

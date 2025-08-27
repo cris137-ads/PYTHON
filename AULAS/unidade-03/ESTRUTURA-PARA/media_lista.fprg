@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="media_lista"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-31 09:44:50 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMwOyIxMTozNzo1NyAiOzIwMzE="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMxOyIwOTo0NDo1MCAiOzI7MjEzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeros" type="Integer" array="True" size="5"/>
+            <assign variable="numeros[0]" expression="10"/>
+            <assign variable="numeros[1]" expression="20"/>
+            <assign variable="numeros[2]" expression="30"/>
+            <assign variable="numeros[3]" expression="40"/>
+            <assign variable="numeros[4]" expression="50"/>
+            <declare name="soma, i" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="soma" expression="soma + numeros[i]"/>
+            </for>
+            <assign variable="media" expression="soma / i"/>
+            <output expression="&quot;Total =&quot; &amp; soma &amp;&#13;&#10;&#13;&#10;&quot;M&#233;dia =&quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

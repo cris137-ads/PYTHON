@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="sorteio"/>
+        <attribute name="authors" value="cris_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-01 11:46:07 "/>
+        <attribute name="created" value="Y3Jpc187Q1JJUzsyMDI1LTA3LTMxOyIxMjozODo0NyAiOzIwMzM="/>
+        <attribute name="edited" value="Y3Jpc187Q1JJUzsyMDI1LTA4LTAxOyIxMTo0NjowNyAiOzI7MjEzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumeroSecreto" type="Integer" array="False" size=""/>
+            <assign variable="NumeroSecreto" expression="Random(100)"/>
+            <declare name="acertou" type="Boolean" array="False" size=""/>
+            <assign variable="acertou" expression="false"/>
+            <while expression="acertou = false">
+                <declare name="palpite" type="Integer" array="False" size=""/>
+                <output expression="&quot;Digite o seu palpite: &quot;" newline="True"/>
+                <input variable="palpite"/>
+                <if expression="palpite = NumeroSecreto">
+                    <then>
+                        <output expression="&quot;Parabens&quot;" newline="True"/>
+                        <assign variable="acertou" expression="true"/>
+                    </then>
+                    <else>
+                        <if expression="palpite &lt; NumeroSecreto">
+                            <then>
+                                <output expression="&quot; Tente um numero maior&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Tente um numero menor&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
